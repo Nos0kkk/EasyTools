@@ -1,0 +1,70 @@
+Hi, this is mini tutorial my library, for import my library, make dir "EasyTools" in your project, copy all .hpp dir "include" in your dir "EasyTools", in dir "obj", copy "EasyTools.o", in your dir "EasyTools", and in dir "build", copy "libEasyTools.so" in your project:
+
+your_project/
+|
+|—— ...
+|
+|——EasyTools/
+|  |——Time.hpp
+|  |——Calculation.hpp
+|  |——Files.hpp
+|  |——Utilities.hpp
+|  |——EasyTools.hpp
+|  |__EasyTools.o
+|
+|__libEasyTools.so
+
+Import library:
+
+#include "EasyTools/Time.hpp"
+#include "EasyTools/Calculation.hpp"
+#include "EasyTools/Files.hpp"
+#include "EasyTools/Utilities.hpp"
+
+Import all library:
+
+#include "EasyTools/EasyTools.hpp"
+
+
+
+Time library (Time.hpp):
+
+etl::wait::time_format(seconds);
+           |
+           |—— sec(seconds) - time stop n second
+           |
+           |—— msec(milliseconds) - time stop n millisencond
+           |
+           |—— min(minutes) - time stop n minute
+           |
+           |__ hour(hours) - time stop n hours
+           
+           
+           
+Calculation library(Calculation.hpp):
+
+etl::etRandom(start, end); - return random number
+
+etl::etHash(argument); - hash string
+
+
+
+File library (Files.hpp):
+
+etl::etMkDir(directory); - make directory
+
+
+
+Utilities library (Utilities.hpp):
+
+etl::clear() - clear console
+
+
+
+compiler:
+
+g++ your_file.cpp -o your_file_name -L/pach/to/libEasyTools.so -lEasyTools
+
+
+
+This is was all library beta version, good luck in build projects ;)
