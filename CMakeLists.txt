@@ -4,7 +4,7 @@ project(EasyTools VERSION 0.1 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -O2")
 
-add_library(EasyTools SHARED src/EasyTools.cpp)
+add_library(EasyTools STATIC src/EasyTools.cpp)
 
 target_include_directories(EasyTools PUBLIC include/)
 
