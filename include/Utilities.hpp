@@ -4,7 +4,7 @@
 #include <cstdlib>
 
 namespace etl {
-  inline void clear() {
+  inline void Clear() {
     #ifdef _WIN32
       system("cls");
     #else

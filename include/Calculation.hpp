@@ -11,12 +11,12 @@ std::random_device RD;
 std::mt19937 GEN(RD());
 
 namespace etl {
-  inline int etRandom(int STARTRAND, int ENDRAND) {
+  inline int Random(int STARTRAND, int ENDRAND) {
     std::uniform_int_distribution<int> RANDOMET(STARTRAND, ENDRAND);
     return RANDOMET(GEN);
   }
   
-  inline constexpr size_t etHash(const char* STRH) noexcept {
+  inline constexpr size_t Hash(const char* STRH) noexcept {
     size_t RESULTH = 0;
     while (*STRH) {
       RESULTH += static_cast<size_t>(*STRH++);

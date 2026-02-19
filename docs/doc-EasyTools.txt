@@ -43,27 +43,27 @@ etl::wait::time_format(seconds);
            
 Calculation library(Calculation.hpp):
 
-etl::etRandom(start, end); - return random number
+etl::Random(start, end); - return random number
 
-etl::etHash(argument); - hash string
+etl::Hash(argument); - hash string
 
 
 
 File library (Files.hpp):
 
-etl::etMkDir(directory); - make directory
+etl::MkDir(directory); - make directory
 
 
 
 Utilities library (Utilities.hpp):
 
-etl::clear() - clear console
+etl::Clear() - clear console
 
 
 
 compiler:
 
-g++ your_file.cpp -o your_file_name -L/pach/to/libEasyTools.so -lEasyTools
+g++ your_file.cpp -o your_file_name -L/pach/to/libEasyTools.a -lEasyTools
 
 
 

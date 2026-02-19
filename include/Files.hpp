@@ -6,7 +6,7 @@
 #include <iostream>
 
 namespace etl {
- inline void etMkDir(const std::string& DIRECTORY) {
+ inline void MkDir(const std::string& DIRECTORY) {
     try {
       if (!std::filesystem::exists(DIRECTORY)) {
         std::filesystem::create_directories(DIRECTORY);
