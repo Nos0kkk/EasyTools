@@ -8,7 +8,8 @@ sudo apt install cmake make
 ```
 Then we assemble
 ```bash
-cd EasyTools/build
+cd EasyTools
+mkdir build && cd build
 cmake ..
 make
 ```
